@@ -1,0 +1,36 @@
+{
+  "$schema": "https://getcomposer.org/schema.json",
+  "name": "ricopie/ddd-shared-kernel",
+  "description": "A framework-agnostic DDD shared kernel for PHP.",
+  "keywords": [
+    "php",
+    "ddd",
+    "shared-kernel"
+  ],
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "pestphp/pest": "^5.3",
+    "phpstan/phpstan": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ricopie\\SharedKernel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {}
+  },
+  "scripts": {},
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
